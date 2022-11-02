@@ -4,19 +4,22 @@
   "package": "com.dm.earth.cabricality.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BootstrapMixin",
+    "FluidDrainingBehaviourMixin",
     "KubeJSMixin",
+    "RecipeManagerMixin",
     "RegistryMixin",
-    "SchemasMixin",
-    "SimpleRegistryMixin",
+    "TagKeyMixin",
     "WrenchItemMixin"
   ],
   "client": [
+    "MinecraftClientMixin",
     "ScreenAccessor",
     "SplashTextResourceSupplierMixin",
     "TitleScreenMixin",
     "TranslatableTextMixin"
   ],
   "injectors": {
-    "defaultRequire": 0
+    "defaultRequire": 1
   }
 }
